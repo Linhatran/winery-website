@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+header {
+  background-image: url('/images/vineyard-field.jpeg');
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  color: #fff;
+  background-position: 45% 55%;
+  position: relative;
+}
+.btn {
+  border-radius: 0;
+}
+.font-weight-bolder {
+  font-weight: bolder;
+}
+#first-img {
+  position: absolute;
+  top: -50px;
+}
+aside {
+  height: 15rem;
+  width: 70vw;
+  background-color: rgba(235, 235, 235, 0.795);
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  position: absolute;
+}
+#first-block {
+  left: -10rem;
+  bottom: -18rem;
+}
+.symbol {
+  width: 100px;
+}
+.symbol > div {
+  width: 60px;
+  align-self: center;
+  margin-left: 5px;
+}
+.shadow {
+  -webkit-box-shadow: 0 30px 30px -5px rgb(161, 161, 161) !important;
+  -moz-box-shadow: 0 30px 30px -5px rgb(161, 161, 161) !important;
+  box-shadow: 0 30px 30px -5px rgb(161, 161, 161) !important;
+}
+#second {
+  margin-top: 13rem;
+  margin-bottom: 12rem;
+}
+#second-img {
+  position: absolute;
+  z-index: 2;
+}
+#second-block {
+  bottom: -12rem;
+  left: -10rem;
+  width: 60vw;
+}
+#fourth-img {
+  position: absolute;
+  top: 5rem;
+}
+
+.stripe {
+  background: linear-gradient(
+    to bottom,
+    rgb(175, 140, 96),
+    rgb(175, 140, 96) 50%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0)
+  );
+  background-size: 100% 15px;
+  height: 100px;
+  width: 200px;
+  margin: 50px auto;
+  position: absolute;
+  z-index: 4;
+}
+#stripe-1 {
+  right: -2rem;
+  bottom: -1rem;
+}
+#stripe-2 {
+  left: -2rem;
+  top: -0.5rem;
+}
+.text-muted {
+  opacity: 0.5;
+}
+#reservation {
+  margin-top: 10rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/cheers.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 14rem;
+}
