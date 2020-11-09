@@ -81,8 +81,8 @@ aside {
   z-index: 4;
 }
 #stripe-1 {
-  right: -2rem;
-  bottom: -1rem;
+  right: -1.5rem;
+  bottom: 5rem;
 }
 #stripe-2 {
   left: -2rem;
@@ -98,4 +98,103 @@ aside {
   background-position: center;
   background-size: cover;
   height: 14rem;
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /***************** HEADER *************/
+  header {
+    height: 90vh;
+  }
+  header:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30vh;
+  }
+  header h1.display-4.col-md-12 {
+    font-size: 2.8rem;
+    margin-top: 2.5rem;
+  }
+  header.lead {
+    font-size: 1rem;
+  }
+  .btn-sm {
+    width: 30vw;
+    height: 4rem;
+  }
+
+  /***************** SECTIONS ***************/
+  #first,
+  #second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .column-text {
+    padding-top: 16rem;
+  }
+  .symbol {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  #first-img {
+    top: -80px;
+    left: 7vw;
+  }
+  aside {
+    height: 18rem;
+  }
+  #second {
+    margin-top: 28rem;
+    margin-bottom: 7rem;
+  }
+  #second-img {
+    top: -36rem;
+    left: 7vw;
+  }
+  .stripe {
+    height: 75px;
+    width: 140px;
+  }
+  #stripe-1 {
+    right: -1.5rem;
+    top: -27rem;
+  }
+  #second-block {
+    position: absolute;
+    top: -11rem;
+    left: 11rem;
+    opacity: 0.4;
+  }
+  #third {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+  #fourth-img {
+    left: 7vw;
+  }
+  #special-events {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 29rem;
+  }
+  #stripe-2 {
+    left: 0;
+  }
+  #events-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #events-toggle h5 {
+    font-size: 1rem;
+  }
+  .event-symmary.row.symbol.mt-md-5.pt-md-5.mb-md-5.ml-md-3 {
+    display: none;
+  }
 }
