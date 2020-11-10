@@ -51,7 +51,7 @@ $(window).ready(function () {
       $('#socials').attr('style', 'display:none');
       $('.event-summary .h2').text('Family Gathering');
       $('.event-summary .col-md-10').text(
-        'Quae accusantium praesentium commodi? Maiores aperiam at optio sunt velit odit et quae, magni illum dignissimos doloremque cumque dolorem quaerat cum.'
+        'Quae accusantium praesentium commodi? Maiores aperiam at optio sunt velit odit et quae, magni illum dignissimos doloremque cumque dolorem quaerat.'
       );
       $(h5).addClass('active-3');
       $(h5).siblings().removeClass('active-1 active-2');
