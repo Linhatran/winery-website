@@ -106,7 +106,137 @@ aside {
 .selected {
   text-shadow: 2px 2px 5px rgba(0, 0, 3, 0.4);
 }
+footer {
+  height: 16rem;
+}
 @media screen and (max-width: 599px) {
+  body p,
+  h1 {
+    text-align: center;
+  }
+  header {
+    height: 60vh;
+  }
+  .nav-brand h1 {
+    font-size: 1.5rem;
+  }
+  header:first-child {
+    padding-top: 15vh;
+    text-align: center;
+  }
+  header h1.display-4.col-md-12 {
+    font-size: 1.4rem;
+  }
+  .lead {
+    font-size: 0.8rem;
+  }
+  .btn-sm {
+    width: 33vw;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+  #first-img {
+    left: 2.2rem;
+    top: -2rem;
+  }
+  .column-text {
+    padding-top: 25rem;
+  }
+  .symbol {
+    margin: 0 auto 2rem;
+  }
+  aside,
+  .stripe {
+    display: none;
+  }
+  #second {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #second div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25rem;
+  }
+
+  #second-img {
+    top: 0;
+    left: 2.2rem;
+  }
+  #second .symbol {
+    margin-top: 5rem;
+  }
+  #third {
+    padding-top: 5rem;
+  }
+  #third img {
+    margin: 2rem 0;
+  }
+  .item {
+    padding-bottom: 2rem;
+  }
+  .text {
+    text-align: center !important;
+  }
+  #special-events {
+    padding-top: 34rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .fourth-img {
+    left: 2.2rem;
+  }
+  .to-disappear {
+    display: none;
+  }
+  .h5 {
+    margin-bottom: 1.5rem;
+  }
+  .active-1::after,
+  .active-2::after,
+  .active-3::after {
+    content: '';
+    position: absolute;
+    border-top: 2px solid rgb(175, 140, 96);
+    width: 15%;
+    height: 0px;
+    left: 10.5rem;
+  }
+  .active-1::after {
+    top: 36rem;
+  }
+  .active-2::after {
+    top: 39rem;
+  }
+  .active-3::after {
+    top: 42rem;
+  }
+  #reservation {
+    margin-top: 3rem;
+  }
+  #reservation div {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  footer .h1 {
+    margin-bottom: 2rem;
+  }
+  footer {
+    height: 50vh;
+    padding-top: 3rem;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   /***************** HEADER *************/
@@ -207,8 +337,8 @@ aside {
     display: none;
   }
   .active-1::after,
-  h5.active-2::after,
-  h5.active-3::after {
+  .active-2::after,
+  .active-3::after {
     content: '';
     position: absolute;
     border-top: 2px solid rgb(175, 140, 96);

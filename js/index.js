@@ -3,11 +3,15 @@ $(window).ready(function () {
     if (x.matches) {
       $('#first-img').attr('src', '/images/wine-glass-field.jpeg');
       $('#second-img').attr('src', '/images/pouring-copy.jpeg');
-      $('#fourth-img').attr('src', '/images/gathering-copy.jpeg');
+      $('#socials').attr('src', '/images/gathering-copy.jpeg');
+      $('#specials').attr('src', '/images/wedding-copy.jpeg');
+      $('#family-gathering').attr('src', '/images/wine-picnic-2-copy.jpeg');
     } else {
       $('#first-img').attr('src', '/images/red-white-wines.jpeg');
       $('#second-img').attr('src', '/images/pouring.jpeg');
-      $('#fourth-img').attr('src', '/images/gathering.jpeg');
+      $('#socials').attr('src', '/images/gathering.jpeg');
+      $('#specials').attr('src', '/images/wedding.jpeg');
+      $('#family-gathering').attr('src', '/images/wine-picnic-2.jpeg');
     }
   }
   function handleShadow(x) {
@@ -29,6 +33,8 @@ $(window).ready(function () {
       $('.event-summary .col-md-10').text(
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempore veniam omnis ipsum soluta expedita modi assumenda explicabo saepe'
       );
+      $(h5).addClass('active-1');
+      $(h5).siblings().removeClass('active-2 active-3');
     } else if ($(h5).html() === 'SPECIAL EVENTS') {
       $('#specials').removeAttr('style');
       $('#socials').attr('style', 'display:none');
@@ -37,6 +43,8 @@ $(window).ready(function () {
       $('.event-summary .col-md-10').text(
         'Cupiditate consectetur autem animi ut exercitationem voluptates error quasi laudantium, ducimus consequatur sit praesentium, nesciunt explicabo earum, architecto cumque in odio quos.'
       );
+      $(h5).addClass('active-2');
+      $(h5).siblings().removeClass('active-1 active-3');
     } else if ($(h5).html() === 'FAMILY GATHERING') {
       $('#family-gathering').removeAttr('style');
       $('#specials').attr('style', 'display:none');
@@ -45,10 +53,12 @@ $(window).ready(function () {
       $('.event-summary .col-md-10').text(
         'Quae accusantium praesentium commodi? Maiores aperiam at optio sunt velit odit et quae, magni illum dignissimos doloremque cumque dolorem quaerat cum.'
       );
+      $(h5).addClass('active-3');
+      $(h5).siblings().removeClass('active-1 active-2');
     }
   });
 
-  const x = window.matchMedia('(max-width: 767px)');
+  const x = window.matchMedia('(max-width: 767px) and (min-width: 600px)');
   changeImg(x);
   x.addListener(changeImg);
 
