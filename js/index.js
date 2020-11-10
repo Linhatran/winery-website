@@ -10,8 +10,19 @@ $(window).ready(function () {
       $('#fourth-img').attr('src', '/images/gathering.jpeg');
     }
   }
+  function handleShadow(x) {
+    if (x.matches) {
+      $('#second-img').addClass('shadow');
+    } else {
+      $('#second-img').removeClass('shadow');
+    }
+  }
 
-  var x = window.matchMedia('(max-width: 767px)');
+  const x = window.matchMedia('(max-width: 767px)');
   changeImg(x);
   x.addListener(changeImg);
+
+  const y = window.matchMedia('(max-width: 1200px');
+  handleShadow(y);
+  y.addListener(handleShadow);
 });

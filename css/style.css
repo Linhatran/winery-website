@@ -250,4 +250,42 @@ aside {
   header.lead {
     font-size: 0.9rem;
   }
+  .column-text {
+    padding-top: 0;
+  }
+  .symbol {
+    margin: 2rem 0 !important;
+    padding-top: 0 !important;
+  }
+  #second {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  .stripe {
+    height: 88px;
+    width: 160px;
+  }
+  #stripe-1 {
+    bottom: 12rem;
+  }
+  #second-block {
+    bottom: -6rem;
+    left: -6rem;
+  }
+  #third {
+    padding: 0 !important;
+  }
+  #third div:nth-child(2) {
+    margin-top: 0 !important;
+  }
+  .item {
+    margin-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  .item img {
+    margin-top: 3rem;
+  }
+  #reservation {
+    margin-top: 3rem;
+  }
 }
