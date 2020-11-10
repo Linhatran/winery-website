@@ -17,6 +17,36 @@ $(window).ready(function () {
       $('#second-img').removeClass('shadow');
     }
   }
+  $('.h5').on('click', function (e) {
+    const h5 = e.target;
+    $(h5).siblings().addClass('text-muted').removeClass('selected');
+    $(h5).removeClass('text-muted ').addClass('selected');
+    if ($(h5).html() === 'SOCIAL EVENTS') {
+      $('#socials').removeAttr('style');
+      $('#specials').attr('style', 'display:none');
+      $('#family-gathering').attr('style', 'display:none');
+      $('.event-summary .h2').text('Social Events');
+      $('.event-summary .col-md-10').text(
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempore veniam omnis ipsum soluta expedita modi assumenda explicabo saepe'
+      );
+    } else if ($(h5).html() === 'SPECIAL EVENTS') {
+      $('#specials').removeAttr('style');
+      $('#socials').attr('style', 'display:none');
+      $('#family-gathering').attr('style', 'display:none');
+      $('.event-summary .h2').text('Special Events');
+      $('.event-summary .col-md-10').text(
+        'Cupiditate consectetur autem animi ut exercitationem voluptates error quasi laudantium, ducimus consequatur sit praesentium, nesciunt explicabo earum, architecto cumque in odio quos.'
+      );
+    } else if ($(h5).html() === 'FAMILY GATHERING') {
+      $('#family-gathering').removeAttr('style');
+      $('#specials').attr('style', 'display:none');
+      $('#socials').attr('style', 'display:none');
+      $('.event-summary .h2').text('Family Gathering');
+      $('.event-summary .col-md-10').text(
+        'Quae accusantium praesentium commodi? Maiores aperiam at optio sunt velit odit et quae, magni illum dignissimos doloremque cumque dolorem quaerat cum.'
+      );
+    }
+  });
 
   const x = window.matchMedia('(max-width: 767px)');
   changeImg(x);
