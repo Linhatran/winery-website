@@ -102,14 +102,14 @@ aside {
 @media screen and (min-width: 600px) and (max-width: 767px) {
   /***************** HEADER *************/
   header {
-    height: 90vh;
+    height: 100vh;
   }
   header:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 18vh;
   }
   header h1.display-4.col-md-12 {
     font-size: 2.8rem;
@@ -194,7 +194,60 @@ aside {
   #events-toggle h5 {
     font-size: 1rem;
   }
-  .event-symmary.row.symbol.mt-md-5.pt-md-5.mb-md-5.ml-md-3 {
+  .to-disappear {
     display: none;
+  }
+  .active-1::after,
+  h5.active-2::after,
+  h5.active-3::after {
+    content: '';
+    position: absolute;
+    border-top: 2px solid rgb(175, 140, 96);
+    width: 11%;
+    height: 0px;
+  }
+  .active-1::after {
+    left: 3.5rem;
+    top: 1.5rem;
+  }
+  .active-2::after {
+    left: 13.75rem;
+    top: 1.5rem;
+  }
+  .active-3::after {
+    left: 25.5rem;
+    top: 1.5rem;
+  }
+  .event-summary {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  #reservation {
+    margin-top: 3rem;
+  }
+  #reservation div:first-of-type {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #reservation div:first-of-type h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header {
+    height: 90vh;
+  }
+  header h1.display-4.col-md-12 {
+    font-size: 2.5rem;
+  }
+  header.lead {
+    font-size: 0.9rem;
   }
 }
