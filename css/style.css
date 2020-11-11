@@ -4,7 +4,7 @@
 }
 
 header {
-  background-image: url('/images/vineyard-field.jpeg');
+  background-image: url('images/vineyard-field.jpeg');
   background-repeat: no-repeat;
   height: 90vh;
   background-size: cover;
@@ -94,7 +94,7 @@ aside {
 #reservation {
   margin-top: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/images/cheers.jpeg');
+    url('images/cheers.jpeg');
   background-position: center;
   background-size: cover;
   height: 14rem;
