@@ -14,6 +14,14 @@ $(window).ready(function () {
       $('#family-gathering').attr('src', 'images/wine-picnic-2.jpeg');
     }
   }
+
+  function removeAnimation(z) {
+    if (z.matches) {
+      $('.to-animate').removeAttr(
+        'data-aos data-aos-offset data-aos-duration data-aos-easing data-aos-anchor-placement'
+      );
+    }
+  }
   function handleShadow(x) {
     if (x.matches) {
       $('#second-img').addClass('shadow');
@@ -62,7 +70,11 @@ $(window).ready(function () {
   changeImg(x);
   x.addListener(changeImg);
 
-  const y = window.matchMedia('(max-width: 1200px');
+  const y = window.matchMedia('(max-width: 1200px)');
   handleShadow(y);
   y.addListener(handleShadow);
+
+  const z = window.matchMedia('(min-width: 1024px)');
+  removeAnimation(z);
+  z.addListener(removeAnimation);
 });

@@ -408,13 +408,6 @@ button:hover {
   footer {
     height: 50vh;
   }
-  .data-aos,
-  .data-aos-offset,
-  .data-aos-duration,
-  .data-aos-easing,
-  .data-aos-anchor-placement {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -557,13 +550,6 @@ button:hover {
   footer p {
     font-size: 0.8rem;
   }
-  .data-aos,
-  .data-aos-offset,
-  .data-aos-duration,
-  .data-aos-easing,
-  .data-aos-anchor-placement {
-    display: none;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   header {
@@ -612,12 +598,5 @@ button:hover {
   }
   #reservation {
     margin-top: 3rem;
-  }
-  .data-aos,
-  .data-aos-offset,
-  .data-aos-duration,
-  .data-aos-easing,
-  .data-aos-anchor-placement {
-    display: none;
   }
 }
