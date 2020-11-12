@@ -26,7 +26,7 @@ $(window).ready(function () {
     $(h5).siblings().addClass('text-muted').removeClass('selected');
     $(h5).removeClass('text-muted ').addClass('selected');
     if ($(h5).html() === 'SOCIAL EVENTS') {
-      $('#socials').removeAttr('style');
+      $('#socials').fadeIn(1000);
       $('#specials').attr('style', 'display:none');
       $('#family-gathering').attr('style', 'display:none');
       $('.event-summary .h2').text('Social Events');
@@ -36,7 +36,7 @@ $(window).ready(function () {
       $(h5).addClass('active-1');
       $(h5).siblings().removeClass('active-2 active-3');
     } else if ($(h5).html() === 'SPECIAL EVENTS') {
-      $('#specials').removeAttr('style');
+      $('#specials').fadeIn(1000);
       $('#socials').attr('style', 'display:none');
       $('#family-gathering').attr('style', 'display:none');
       $('.event-summary .h2').text('Special Events');
@@ -46,7 +46,7 @@ $(window).ready(function () {
       $(h5).addClass('active-2');
       $(h5).siblings().removeClass('active-1 active-3');
     } else if ($(h5).html() === 'FAMILY GATHERING') {
-      $('#family-gathering').removeAttr('style');
+      $('#family-gathering').fadeIn(1000);
       $('#specials').attr('style', 'display:none');
       $('#socials').attr('style', 'display:none');
       $('.event-summary .h2').text('Family Gathering');

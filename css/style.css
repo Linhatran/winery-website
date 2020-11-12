@@ -47,6 +47,7 @@ aside {
   -moz-box-shadow: 0 30px 30px -5px rgb(161, 161, 161) !important;
   box-shadow: 0 30px 30px -5px rgb(161, 161, 161) !important;
 }
+
 #second {
   margin-top: 13rem;
   margin-bottom: 12rem;
@@ -91,6 +92,9 @@ aside {
 .text-muted {
   opacity: 0.5;
 }
+.text p {
+  color: rgb(175, 140, 96);
+}
 #reservation {
   margin-top: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -108,6 +112,10 @@ aside {
 }
 footer {
   height: 16rem;
+}
+button:hover {
+  background-color: #406357 !important;
+  color: #fff !important;
 }
 @media screen and (max-width: 420px) {
   body p,

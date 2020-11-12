@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery.js"></script>
@@ -28,7 +29,10 @@
             Experience our exquisite selection in beautiful country surroundings. Taste the freshest
             sips of wines from the comfort of our vineyard.
           </p>
-          <button class="btn btn-sm btn-outline-light py-md-3 px-md-5 mb-5 ml-md-3">
+          <button
+            class="btn btn-sm btn-outline-light py-md-3 px-md-5 mb-5 ml-md-3"
+            style="background-color: #5b8e7d; border: none"
+          >
             SCHEDULE A VISIT
           </button>
         </div>
@@ -47,7 +51,12 @@
               id="first-img"
             />
           </div>
-          <div class="col-md-6 mt-md-3 pl-md-5 column-text">
+          <div
+            class="col-md-6 mt-md-3 pl-md-5 column-text"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="row symbol mt-md-5 pt-md-5 mb-md-5 ml-md-3">
               <i class="far fa-circle" style="color: rgb(175, 140, 96); font-size: 7px"></i>
               <div style="border-top: 0.5px solid rgb(175, 140, 96)"></div>
@@ -67,7 +76,12 @@
         </section>
 
         <section id="second" class="row">
-          <div class="col-md-6 mt-md-3">
+          <div
+            class="col-md-6 mt-md-3"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="row symbol mt-md-5 pt-md-5 mb-md-5 pl-3">
               <i class="far fa-circle" style="color: rgb(175, 140, 96); font-size: 7px"></i>
               <div style="border-top: 0.5px solid rgb(175, 140, 96)"></div>
@@ -118,7 +132,15 @@
             </p>
           </div>
 
-          <div class="col-md-6 mt-sm-5 pt-md-3">
+          <div
+            class="col-md-6 mt-sm-5 pt-md-3"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="item row mt-md-5 pt-sm-4">
               <img
                 src="images/pizza-wine.jpeg"
@@ -207,7 +229,14 @@
             />
           </div>
           <div class="col-md-6 mt-md-3 pl-md-5" id="special-events">
-            <div class="event-summary">
+            <div
+              class="event-summary"
+              data-aos="zoom-in-down"
+              data-aos-offset="100"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <div class="row symbol mt-md-5 pt-md-5 mb-md-5 ml-md-3 to-disappear">
                 <i class="far fa-circle" style="color: rgb(175, 140, 96); font-size: 7px"></i>
                 <div style="border-top: 0.5px solid rgb(175, 140, 96)"></div>
@@ -224,7 +253,7 @@
               </p>
               <button
                 class="btn btn-sm btn-dark py-md-3 px-md-5 mb-5 ml-md-3 mt-sm-3"
-                style="background-color: #000"
+                style="background-color: #5b8e7d; border: none"
               >
                 SCHEDULE A VISIT
               </button>
@@ -247,7 +276,10 @@
         <div class="align-self-center" style="color: #fff">
           <h1 style="font-family: 'Poppins', sans-serif">Ready to make a reservation?</h1>
         </div>
-        <button class="btn btn-sm btn-outline-light py-md-3 px-md-5 align-self-center">
+        <button
+          class="btn btn-sm btn-outline-light py-md-3 px-md-5 align-self-center"
+          style="background-color: #5b8e7d; border: none"
+        >
           SCHEDULE A VISIT
         </button>
       </div>
@@ -275,5 +307,9 @@
       </div>
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
