@@ -204,8 +204,9 @@ button:hover {
   #third {
     padding-top: 5rem;
   }
-  #third img {
+  .item img {
     margin: 2rem 0;
+    height: auto !important;
   }
   .item {
     padding-bottom: 2rem;
