@@ -15,20 +15,6 @@ $(window).ready(function () {
     }
   }
 
-  // function removeAnimation(z) {
-  //   if (z.matches) {
-  //     $('.to-animate').removeAttr(
-  //       'data-aos data-aos-offset data-aos-duration data-aos-easing data-aos-anchor-placement'
-  //     );
-  //   } else {
-  //     $('#animation-1').attr({
-  //       'data-aos': 'fade-left',
-  //       'data-aos-offset': '300',
-  //       'data-aos-easing': 'ease-in-sine',
-  //     });
-  //   }
-  // }
-
   function handleShadow(x) {
     if (x.matches) {
       $('#second-img').addClass('shadow');
@@ -80,8 +66,4 @@ $(window).ready(function () {
   const y = window.matchMedia('(max-width: 1200px)');
   handleShadow(y);
   y.addListener(handleShadow);
-
-  // const z = window.matchMedia('(min-width: 1024px)');
-  // removeAnimation(z);
-  // z.addListener(removeAnimation);
 });
