@@ -1,17 +1,17 @@
 $(window).ready(function () {
   function changeImg(x) {
     if (x.matches) {
-      $('#first-img').attr('src', '/images/wine-glass-field.jpeg');
-      $('#second-img').attr('src', '/images/pouring-copy.jpeg');
-      $('#socials').attr('src', '/images/gathering-copy.jpeg');
-      $('#specials').attr('src', '/images/wedding-copy.jpeg');
-      $('#family-gathering').attr('src', '/images/wine-picnic-2-copy.jpeg');
+      $('#first-img').attr('src', 'images/wine-glass-field.jpeg');
+      $('#second-img').attr('src', 'images/pouring-copy.jpeg');
+      $('#socials').attr('src', 'images/gathering-copy.jpeg');
+      $('#specials').attr('src', 'images/wedding-copy.jpeg');
+      $('#family-gathering').attr('src', 'images/wine-picnic-2-copy.jpeg');
     } else {
-      $('#first-img').attr('src', '/images/red-white-wines.jpeg');
-      $('#second-img').attr('src', '/images/pouring.jpeg');
-      $('#socials').attr('src', '/images/gathering.jpeg');
-      $('#specials').attr('src', '/images/wedding.jpeg');
-      $('#family-gathering').attr('src', '/images/wine-picnic-2.jpeg');
+      $('#first-img').attr('src', 'images/red-white-wines.jpeg');
+      $('#second-img').attr('src', 'images/pouring.jpeg');
+      $('#socials').attr('src', 'images/gathering.jpeg');
+      $('#specials').attr('src', 'images/wedding.jpeg');
+      $('#family-gathering').attr('src', 'images/wine-picnic-2.jpeg');
     }
   }
   function handleShadow(x) {
