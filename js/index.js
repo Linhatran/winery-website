@@ -59,6 +59,16 @@ $(window).ready(function () {
     }
   });
 
+  function addAsideAndShadow(z) {
+    if (z.matches) {
+      $('#reservation-container')
+        .before('<aside id="reservation-block"></aside> ')
+        .prepend(' <div class="stripe" id="reservation-stripe"></div>');
+    } else {
+      $('#reservation-block').remove();
+      $('#reservation-stripe').remove();
+    }
+  }
   const x = window.matchMedia('(max-width: 767px) and (min-width: 600px)');
   changeImg(x);
   x.addListener(changeImg);
@@ -66,4 +76,8 @@ $(window).ready(function () {
   const y = window.matchMedia('(max-width: 1200px)');
   handleShadow(y);
   y.addListener(handleShadow);
+
+  const z = window.matchMedia('(min-width: 993px)');
+  addAsideAndShadow(z);
+  z.addListener(addAsideAndShadow);
 });

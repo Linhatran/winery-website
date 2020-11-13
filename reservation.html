@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinery</title>
+    <script src="https://kit.fontawesome.com/c9679b13d6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header id="header-2">
+      <div class="container-sm container-fluid">
+        <a href="index.html">
+          <div class="nav-brand pt-md-5">
+            <h1 class="font-weight-bolder h1 pl-md-3" style="font-family: 'Poppins', sans-serif">
+              vinery
+            </h1>
+          </div>
+        </a>
+        <div class="col-md-7 mt-md-5 pt-md-3 pl-0">
+          <h1 class="display-4 col-md-12">Reservations</h1>
+          <p class="lead my-md-4 col-md-10 col-12 px-0 ml-md-3 mx-auto">
+            We simply cannot wait to welcome you to our vineyard. If you have any special
+            requirement, please feel free to call on the phone number below. We will be happy to
+            accommodate you.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" id="reservation-container" style="position: relative">
+      <form action="" autocomplete="off">
+        <input type="text" name="name" placeholder="Name" class="form-control" />
+        <input type="email" name="email" placeholder="Email" class="form-control" />
+        <div class="form-row d-sm-flex justify-content-sm-between">
+          <label class="col-sm-4 text-sm-left text-center" for="date">Pick a date</label>
+          <div class="d-flex justify-content-between col-sm-8 col-12">
+            <input
+              class="col mr-3 px-0 text-center"
+              type="number"
+              name="MM"
+              placeholder="MM"
+              max="12"
+              min="1"
+            />
+            <input
+              class="col mr-3 px-0 text-center"
+              type="number"
+              name="DD"
+              placeholder="DD"
+              max="31"
+              min="1"
+            />
+            <input
+              class="col text-center"
+              type="number"
+              name="YYYY"
+              placeholder="YYYY"
+              min="2020"
+              max="2024"
+            />
+          </div>
+        </div>
+        <div class="form-row d-sm-flex justify-content-sm-between">
+          <label class="col-sm-4 text-sm-left text-center" for="time">Pick a time</label>
+          <div class="col-sm-8 col-12 d-flex justify-content-between">
+            <input
+              class="col mr-3 px-0 text-center px-0"
+              type="number"
+              name="hour"
+              placeholder="09"
+              min="01"
+              max="12"
+            />
+            <input
+              class="col mr-3 text-center px-0"
+              type="number"
+              name="minutes"
+              placeholder="00"
+              min="00"
+              max="59"
+            />
+            <select class="col px-0">
+              <option selected>AM</option>
+              <option>PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-control d-flex justify-content-between">
+          <button class="btn" type="button">-</button>
+          <b><span>4</span> people</b>
+          <button class="btn" type="button">+</button>
+        </div>
+        <button
+          class="btn btn-block btn-lg mt-5 py-3"
+          style="background-color: #5b8e7d; border: none; color: #fff"
+          type="submit"
+        >
+          MAKE RESERVATION
+        </button>
+      </form>
+    </div>
+    <footer style="background-color: #000; color: #fff" id="footer-2">
+      <div class="container-md d-flex align-items-center py-sm-5" style="height: 100%; width: 100%">
+        <div
+          class="col-md-3 h1 col-sm-4 align-self-sm-start"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          vinery
+        </div>
+        <div class="col-md-9 d-flex col-sm-8 flex-md-row flex-sm-column">
+          <div class="col-md-6 pb-sm-3">
+            <p>4 N. VERMONT ST. HIGHTSTOWN, NJ 08520</p>
+            <p style="color: #fff"><b>+1 372 039 4729</b></p>
+          </div>
+          <div class="col-md-6">
+            <p>OPEN TIMES</p>
+            <p>MON - FRI: 09:00 AM - 10:00 PM</p>
+            <p>SAT - SUN: 09:00 AM - 08:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>
