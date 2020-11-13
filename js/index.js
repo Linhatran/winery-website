@@ -64,9 +64,11 @@ $(window).ready(function () {
       $('#reservation-container')
         .before('<aside id="reservation-block"></aside> ')
         .prepend(' <div class="stripe" id="reservation-stripe"></div>');
+      $('form').addClass('shadow');
     } else {
       $('#reservation-block').remove();
       $('#reservation-stripe').remove();
+      $('form').removeClass('shadow');
     }
   }
   const x = window.matchMedia('(max-width: 767px) and (min-width: 600px)');
